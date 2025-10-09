@@ -313,3 +313,23 @@ estilo redes sociales*/
         opacity: 1;
     }
     }
+
+
+
+.seccion_gracias{
+width: 80%;
+margin-top: 40px;
+display: flex;
+justify-content: space-evenly;
+}
+
+.btn_gracias{
+    position: relative;
+    top: 15px;
+    text-decoration: none;
+}
+
+.img_gracias{
+    width: 50%;
+    height: 50%;
+}
