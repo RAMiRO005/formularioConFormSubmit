@@ -333,3 +333,100 @@ justify-content: space-evenly;
     width: 50%;
     height: 50%;
 }
+
+
+/* ======== NAVBAR RESPONSIVE ======== */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #7ab2b2;
+  color: #fff;
+  z-index: 1000;
+}
+
+/* Estado normal */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  padding: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ======== MOBILE (480px) ======== */
+@media (max-width: 480px) {
+  .menu-toggle { display: flex; }
+
+  .nav-links {
+    position: absolute;
+    top: 50px; /* 🔹 ajustado: justo debajo del navbar */
+    left: -100%;
+    background-color: #4d869c;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    transition: left 0.3s ease;
+  }
+
+  .nav-links.active { left: 0; }
+
+  .nav-links li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    top: 100%; 
+  
+  }
+
+  /* animación del botón hamburguesa */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  header h1 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  header h2 {
+    font-size: 1em;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  section { width: 90%; }
+}

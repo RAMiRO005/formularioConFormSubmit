@@ -18,6 +18,23 @@
 
   <meta name="author" content="Ramiro">
 
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://it-ramiro.netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Home | Página sobre Tecnología Educativa">
+<meta property="og:description" content="Tecnología educativa, pagina sobre el uso educativo de las TIC en diferentes formas de representación, difucion y acceso al conocimiento y a la cultura">
+<meta property="og:image" content="https://opengraph.b-cdn.net/production/images/533fd229-a9d9-4519-8009-4f3a709681ef.jpg?token=hNfvzZ0mVPM417W00xb3fIgFqYeOJNgJO45j74JXpPg&height=500&width=600&expires=33296649116">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="it-ramiro.netlify.app">
+<meta property="twitter:url" content="https://it-ramiro.netlify.app">
+<meta name="twitter:title" content="Home | Página sobre Tecnología Educativa">
+<meta name="twitter:description" content="Tecnología educativa, pagina sobre el uso educativo de las TIC en diferentes formas de representación, difucion y acceso al conocimiento y a la cultura">
+<meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/533fd229-a9d9-4519-8009-4f3a709681ef.jpg?token=hNfvzZ0mVPM417W00xb3fIgFqYeOJNgJO45j74JXpPg&height=500&width=600&expires=33296649116">
+
+<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
@@ -33,34 +50,25 @@
       <h2>uso innovador para transformar el proceso de enseñanza y aprendizaje</h2>
   
     </header>
-    <nav>
-      <ul>
-  
-        <li>
-          <a href="#"> <img class="icono" src="./assets/icons/home_pin_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Inicio</a>
-        </li>
-  
-        <li>
-          <a href="robotica.html"> <img class="icono" src="./assets/icons/robot_2_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Robotica</a>
-        </li>
-  
-        <li>
-          <a href="impresion.html"> <img class="icono" src="./assets/icons/print_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Impresión 3D</a>
-        </li>
+  <nav class="navbar">
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
-        
-        <li>
-          <a href="contacto.html"> <img class="icono" src="./assets/icons/article_person_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""> contacto</a>
-        </li>
-
-      </ul>
-  
-    </nav>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#"><img class="icono" src="./assets/icons/home_pin_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Inicio</a></li>
+    <li><a href="robotica.html"><img class="icono" src="./assets/icons/robot_2_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Robótica</a></li>
+    <li><a href="impresion.html"><img class="icono" src="./assets/icons/print_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Impresión 3D</a></li>
+    <li><a href="contacto.html"><img class="icono" src="./assets/icons/article_person_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Contacto</a></li>
+  </ul>
+</nav>
 
   </section>
 
   <main>
-    <section  data-aos="fade-up">
+    <section  data-aos="fade-up" data-aos-duration="1500">
       <h2 >Tecnología Educativa</h2>
       <p>
         La tecnología educativa es "el espacio intelectual pedagógico cuyo
@@ -98,7 +106,7 @@
 
 
 
-    <section  data-aos="fade-up">
+    <section  data-aos="fade-up" data-aos-duration="1500">
       <h2 >Mundo Digital</h2>
 
       <p >
@@ -137,7 +145,7 @@
 
   <footer  >
       <!-- From Uiverse.io by faxriddin20 --> 
-  <div class="card"  data-aos="fade-up">
+  <div class="card"  data-aos="fade-up" data-aos-duration="1500">
     <a class="socialContainer containerOne" href="https://instagram.com">
       <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
         <path
@@ -173,11 +181,13 @@
 
       <h4>Derechos Reservados 2025</h4>
     </footer>
-
+    <script src="./assets/js/navbar.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
+
 </body>
 
 </html>
