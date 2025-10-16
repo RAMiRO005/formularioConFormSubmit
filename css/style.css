@@ -3,24 +3,26 @@
    ========================================================= */
 :root {
   /* Colores */
-  --color-fondo: #eef7ff;
-  --color-header: #4d869c;
-  --color-nav: #7ab2b2;
-  --color-footer: #cde8e5;
-  --color-texto: #ffffff;
-  --color-borde: #7ab2b2;
-  --color-hover: #4d869c;
-  --color-sombra-btn: rgba(30, 143, 255, 0.35);
-  --color-sombra-btn-hover: rgba(33, 220, 98, 0.35);
+  --color-fondo: #eaf6ff;         /* celeste muy claro, fondo general */
+  --color-header: #a8dadc;        /* azul verdoso pastel */
+  --color-nav: #457b9d;           /* azul intermedio */
+  --color-footer: #cdeffd;        /* azul claro para el pie */
+  --color-texto: #1b263b;         /* azul grisáceo oscuro para texto */
+  --color-borde: #457b9d;         /* mismo tono que nav */
+  --color-hover: #1d3557;         /* azul marino profundo */
+  --color-sombra-btn: rgba(69, 123, 157, 0.3);
+  --color-sombra-btn-hover: rgba(29, 53, 87, 0.4);
 
   /* Tipografías */
-  --fuente-principal: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  --fuente-secundaria: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --fuente-principal: 'Poppins', 'Lucida Sans', Geneva, sans-serif;
+  --fuente-secundaria: 'Open Sans', Tahoma, Geneva, sans-serif;
 
   /* Otros */
   --sombra-general: 0 4px 10px rgba(0, 0, 0, 0.1);
   --transicion-base: 0.3s ease;
 }
+
+
 
 /* =========================================================
    RESETEO Y BASE
