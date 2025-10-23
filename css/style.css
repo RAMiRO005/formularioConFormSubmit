@@ -149,7 +149,7 @@ form {
   max-width: 500px;
   margin: 30px auto;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: var(--color-fondo);
   border: 2px solid var(--color-borde);
   border-radius: 10px;
   box-shadow: var(--sombra-general);
@@ -157,7 +157,7 @@ form {
 
 form h2 {
   text-align: center;
-  color: var(--color-header);
+  color: var(--color-texto);
   margin-bottom: 20px;
 }
 
@@ -165,7 +165,7 @@ form label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
-  color: var(--color-header);
+  color: var(--color-texto);
 }
 
 form input,
@@ -304,7 +304,7 @@ button:active {
 }
 
 .socialSvg path {
-  fill: var(--color-texto);
+  fill: white;
 }
 
 .socialContainer:hover .socialSvg {
